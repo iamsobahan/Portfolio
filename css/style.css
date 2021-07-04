@@ -1,0 +1,381 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+}
+
+.container {
+    width: 1320px;
+    margin: 0 auto;
+}
+
+
+#nav-part {
+    background: #f1f1f2;
+    background: url(../images/top-banner.png) no-repeat;
+}
+
+.mother {
+    display: flex;
+}
+
+#nav-part .logo {
+    width: 20%;
+
+}
+
+#nav-part .menu {
+    width: 80%;
+    margin: auto 0;
+}
+
+#nav-part .menu ul {
+    text-align: center;
+}
+
+#nav-part .menu ul li {
+    display: inline-block;
+}
+
+#nav-part .menu ul li {
+    margin: 0 40px;
+}
+
+#nav-part .menu ul li a {
+    color: black;
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    position: relative;
+}
+
+.btn {
+    text-align: end;
+    margin-top: -27px;
+}
+
+.btn a {
+    background: linear-gradient(tomato, black);
+    color: #f1f1f2;
+
+    padding: 15px 15px;
+    border-radius: 5px;
+    display: inline;
+    font-family: 'Poppins', sans-serif;
+}
+
+#nav-part .menu ul li a::after {
+
+    position: absolute;
+    top: 52%;
+    left: 0;
+    background: tomato;
+    width: 0%;
+    height: 2px;
+    content: "";
+    transition: .4s;
+}
+
+#nav-part .menu ul li a:hover::after {
+    width: 100%;
+}
+
+
+#banner-part {
+    background: url(../images/banner.jpg) no-repeat center;
+    background-size: cover;
+
+    position: relative;
+}
+
+#banner-part img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+}
+
+#banner-part .overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .3);
+    padding-top: 280px;
+    padding-bottom: 180px;
+    position: relative;
+}
+
+#banner-part .overlay h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: #f1f1f2;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+
+
+#banner-part .overlay h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    color: black;
+    font-weight: 700;
+
+}
+
+#banner-part .overlay span {
+    color: white;
+}
+
+#banner-part .overlay h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #f1f1f2;
+    font-weight: 700;
+    margin-top: 20px;
+
+}
+
+#banner-part .overlay p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #f1f1f2;
+    font-weight: 400;
+    width: 550px;
+    padding-bottom: 40px;
+
+}
+
+#banner-part .overlay .btn {
+    text-align: start;
+    display: inline;
+    margin-right: 20px;
+
+}
+
+#banner-part .overlay .icon {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+
+}
+
+#banner-part .overlay .icon i {
+    display: block;
+    font-size: 20px;
+    color: #f1f1f2;
+    margin: 12px 0;
+    text-align: center;
+
+}
+
+#about-part {
+    padding-top: 150px;
+    padding-bottom: 60px;
+
+    background: url(../images/dream-bg.png) no-repeat right;
+   
+}
+
+#about-part .img {
+    width: 40%;
+    position: relative;
+
+}
+
+#about-part .img div {
+    width: 100%;
+    height: 300px;
+    background: black;
+    position: absolute;
+    top: -12px;
+    left: -12px;
+    z-index: -1;
+}
+
+
+
+#about-part .img img {
+    width: 100%;
+    border: 5px solid;
+    border-top: none;
+    border-left: none;
+
+}
+
+#about-part .text {
+    width: 50%;
+    padding-left: 5%;
+    margin-top: -80px;
+
+
+}
+
+#about-part .text h1 {
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    text-transform: capitalize;
+    font-size: 32px;
+    font-weight: 700;
+
+}
+
+#about-part .text h4 {
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    text-transform: capitalize;
+    font-size: 24px;
+    font-weight: 700;
+
+}
+
+#about-part .text .main-text p {
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    margin-top: 10px;
+    border-bottom: 2px solid rgba(0, 0, 0, .4);
+    padding-bottom: 20px;
+}
+
+#about-part .text .mother {
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+
+#about-part .text .mother p {
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: black;
+}
+
+#about-part .text .about-btn {
+
+    margin-top: 10px;
+}
+
+#about-part .text .about-btn .abt-btn {
+    padding: 10px 15px;
+    border-radius: 35px;
+    background: linear-gradient(tomato, black);
+    color: #f1f1f2;
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+#experience-part {
+    padding-bottom: 100px;
+    padding-top: 100px;
+    background: url(../images/exp-bg.png) no-repeat;
+    background-position: left;
+
+
+
+
+}
+
+#experience-part h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: black;
+    text-transform: uppercase;
+    position: relative;
+
+}
+
+#experience-part h2::after {
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    background: tomato;
+    width: 50%;
+    height: 2px;
+    content: "";
+}
+
+#experience-part h2::before {
+    position: absolute;
+    bottom: -10px;
+    left: 51%;
+    background: tomato;
+    width: 5%;
+    height: 2px;
+    content: "";
+}
+
+
+#experience-part .mother {
+    justify-content: space-between;
+    padding-top: 50px;
+
+
+}
+
+
+#experience-part .mother .left {
+    width: 43%;
+    background: white;
+    border-left: 7px solid;
+    border-image: linear-gradient(blue, cyan);
+    border-image-slice: 1;
+    box-shadow: 5px 7px 40px grey;
+    padding: 50px 30px 100px 30px;
+}
+
+#experience-part .mother .left .blue {
+    color: blue !important;
+}
+
+#experience-part .mother .right {
+    background: white;
+    width: 43%;
+    border-left: 7px solid;
+    border-image: linear-gradient(orange, tomato);
+    border-image-slice: 1;
+    box-shadow: 5px 7px 40px grey;
+    padding: 50px 30px 100px 30px;
+}
+
+#experience-part .mother h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 42px;
+    font-weight: 600;
+    color: black;
+}
+
+#experience-part .mother h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: tomato;
+    margin-top: 40px;
+}
+
+#experience-part .mother p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: black;
+    margin-top: 30px;
+}
+
+
+.footer {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: dimgrey;
+    text-align: center;
+}
